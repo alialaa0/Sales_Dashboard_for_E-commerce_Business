@@ -1,73 +1,54 @@
-# 🛍️ Sales Dashboard for E-Commerce Business
+# 🛍️ Sales Dashboard for E-Commerce Business (Python)
 
 ## 📖 Overview
-This project showcases an **interactive Sales Analytics Dashboard** built to monitor and analyze key business metrics for an e-commerce company.  
-It provides actionable insights into **sales trends, profit margins, product performance, and customer behavior**, enabling data-driven decision-making.
+This project demonstrates an **end-to-end data analysis and visualization workflow** using Python for an e-commerce sales dataset.  
+The goal is to create an **interactive Sales Dashboard** that tracks performance metrics such as revenue, profit, and sales growth, while providing actionable insights into business performance and customer behavior.
 
 ## 🎯 Objectives
-- Analyze sales data to uncover trends, profit margins, and key performance metrics.  
-- Track KPIs including **Total Sales, Profit, Sales Growth Rate,** and **Average Order Size**.  
-- Identify top-performing products, customer segments, and regions.  
-- Highlight delivery performance and time-based sales patterns.  
-- Provide insights and recommendations for business improvement.
+- Analyze sales data to identify trends and performance KPIs.  
+- Calculate metrics such as **Total Sales, Profit Margin, Sales Growth Rate,** and **Average Order Size**.  
+- Visualize insights across **time, region, and product categories**.  
+- Provide clear business recommendations based on data-driven findings.
 
-## 🧭 Project Scope
-| Component | Description |
-|------------|-------------|
-| **Advanced Metrics** | Calculated KPIs: Sales Growth, Average Order Size, Profit Margin, Time-of-Day Sales |
-| **Dashboard Elements** | KPIs, Top Products, Regions, Customers, Sales Reps |
-| **Filtering** | Interactive slicers for Product, Region, and Sales Representative |
-| **Visualizations** | Monthly trends, Hourly sales, Product categories, Profit margins |
-| **Insights & Recommendations** | Three key findings and two actionable strategies |
+## 🧭 Project Workflow
+1. **Data Collection & Preparation**  
+   - Loaded and merged multiple datasets (Sales, Products, Customers, Regions).  
+   - Cleaned data using **Pandas** (handled duplicates, missing values, and outliers).  
+   - Standardized column names and formatted dates for time-series analysis.
 
-## ⚙️ Tools & Technologies
+2. **Exploratory Data Analysis (EDA)**  
+   - Used **NumPy** and **Pandas** to compute KPIs: Total Sales, Profit, and Growth Rate.  
+   - Performed **trend analysis** to identify top products, profitable regions, and sales patterns.
+
+3. **Visualization & Dashboarding**  
+   - Created professional visuals using **Matplotlib** and **Seaborn**:
+     - Monthly and daily sales trends  
+     - Top-selling products and regions  
+     - Profit margins by category  
+     - Customer purchasing behavior  
+   - Designed a simple interactive dashboard in Jupyter Notebook for insights presentation.
+
+4. **Insights & Recommendations**
+   - Top 20% of products contribute ~65% of revenue.  
+   - Region C shows consistent profit growth over three months.  
+   - Weekday sales peak between 10 AM – 2 PM; recommend time-based promotions.  
+   - Suggest optimizing low-margin categories to increase profitability.
+
+## ⚙️ Tools & Libraries
 | Tool | Purpose |
 |------|----------|
-| **Microsoft Excel** | Data analysis and modeling |
-| **Power BI** | Dashboard creation and visualization |
-| **Power Query (M)** | Data cleaning and transformation |
-| **Power Pivot (DAX)** | Calculated measures and KPIs |
-| **Pivot Tables & Charts** | Data summarization and exploration |
-| **GitHub** | Version control and project sharing |
+| **Python** | Core programming language |
+| **Pandas** | Data cleaning and manipulation |
+| **NumPy** | Numerical computation |
+| **Matplotlib** | Static data visualizations |
+| **Seaborn** | Statistical plots and insights visualization |
+| **Jupyter Notebook** | Project documentation and presentation |
 
-## 🧠 Data Model
-The dataset contains multiple linked tables:
-- **Sales Table:** transaction details including product, region, sales rep, quantity, and revenue.  
-- **Customer Table:** customer demographics and segments.  
-- **Product Table:** product information (category, cost, price).  
-- **Region Table:** location and sales territory mapping.
+## 📊 KPIs & Metrics
+- **Total Sales** = Quantity × Price  
+- **Profit Margin** = (Profit / Revenue) × 100  
+- **Sales Growth Rate** = ((Current – Previous) / Previous) × 100  
+- **Average Order Size** = Total Revenue / Total Orders  
 
-**Relationships:**  
-All tables are connected via key fields (Product_ID, Customer_ID, Region_ID) to enable cross-functional reporting and DAX calculations.
+## 📁 Project Structure
 
-## 📊 Key Insights
-1. **Top Products:** 15% of products drive nearly 60% of total sales revenue.  
-2. **Regional Trends:** Region C consistently leads in monthly profit growth.  
-3. **Peak Hours:** Majority of sales occur between 10 AM – 2 PM on weekdays.  
-
-**Recommendations:**
-- Focus marketing on top-performing regions and products.  
-- Offer time-based promotions during peak sales hours to increase conversions.
-
-## 📅 Project Timeline
-| Phase | Duration | Description |
-|--------|-----------|-------------|
-| Data Collection & Cleaning | Week 1 | Prepared and cleaned datasets |
-| Data Modeling & Calculations | Week 2 | Created relationships and DAX measures |
-| Dashboard Design | Week 3 | Built visuals and slicers |
-| Insights & Reporting | Week 4 | Compiled report and documentation |
-
-## 🧩 Deliverables
-- Interactive **Sales Dashboard** with dynamic filtering.  
-- **Documentation** of metrics, calculations, and KPIs.  
-- **Summary Report** with insights and recommendations.  
-
-## 👨‍💻 Author
-**Ali Alaa** — Data Analyst  
-📍 Cairo, Egypt  
-🔗 [LinkedIn](https://www.linkedin.com/in/3li-3laa/)  
-📧 alialaaaou@gmail.com  
-
-## ⭐ License
-This project is open for learning and educational use.  
-Feel free to **fork, reuse, or modify** for your own analytical practice.
